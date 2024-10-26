@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap");
+
+.container {
+  max-width: 1100px;
+  padding: 0 20px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Maven Pro", sans-serif;
+  font-weight: 400;
+  color: #878ea1;
+  background: url(../image/background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__bottom-wrapper {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__bottom-item {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  background-color: #292c34;
+  padding: 0.5rem 1rem;
+  border-radius: 3rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.5s ease-out;
+}
+
+.header__bottom-item:hover {
+  border: 1px solid #e3646e;
+  color: #fff;
+  -webkit-box-shadow: 1px 1px 10px 4px rgba(227, 100, 110, 0.2);
+  -moz-box-shadow: 1px 1px 10px 4px rgba(227, 100, 110, 0.2);
+  box-shadow: 0px 0px 7px 5px rgba(227, 100, 110, 0.2);
+}
+
+.icons__wrapper {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__bottom-icon {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.header__bottom-text {
+  font-size: 1rem;
+}
+
+.header__wrapper-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.header__wrapper-img {
+  max-width: 20rem;
+  max-height: 20rem;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid #e3646e;
+}
+.red {
+  color: #e3646e;
+}
+.header__img-avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-position: center;
+}
+
+.header__wrapper-descr {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.header__wrapper-text {
+  font-size: 1.5rem;
+  font-family: "Courier New", Courier, monospace; /* Шрифт для эффекта машинного кода */
+}
+.header__wrapper-text span {
+  color: #e3646e;
+}
+.header__wrapper-title {
+  font-weight: 700;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.header__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+  /* header {
+    height: 130vh;
+  } */
+}
